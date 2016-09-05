@@ -34,7 +34,7 @@ export default class WebApps extends React.Component {
     // it can be filtered based on the technology used
     // in creating the App corresponding to the Card
 
-    console.log('filling the menu...')
+    console.log('filling the menu....');
 
     return this.state.filtered.map((e) => {
       return (
