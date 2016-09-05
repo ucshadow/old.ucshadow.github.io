@@ -21847,16 +21847,16 @@
 	function libUrl(lib) {
 	  // url's to framework icons
 	  var allUrls = {
-	    Node: "http://i.imgur.com/kj7Vf48.png",
-	    Meteor: "http://i.imgur.com/omS8IRf.png",
-	    Bootstrap: "http://i.imgur.com/QoiOUgk.png",
-	    Python: "http://i.imgur.com/amG0nzx.png",
-	    "Material UI": "http://i.imgur.com/CyxO34A.png",
-	    React: "http://i.imgur.com/7joJzVB.png",
-	    jQuery: "http://i.imgur.com/ONbLw10.png",
-	    mongoDB: "http://i.imgur.com/QYRfoqQ.png",
-	    D3: "http://i.imgur.com/rnBzCfm.png",
-	    Highcharts: "http://i.imgur.com/9R1IGev.png"
+	    Node: "https://i.imgur.com/kj7Vf48.png",
+	    Meteor: "https://i.imgur.com/omS8IRf.png",
+	    Bootstrap: "https://i.imgur.com/QoiOUgk.png",
+	    Python: "https://i.imgur.com/amG0nzx.png",
+	    "Material UI": "https://i.imgur.com/CyxO34A.png",
+	    React: "https://i.imgur.com/7joJzVB.png",
+	    jQuery: "https://i.imgur.com/ONbLw10.png",
+	    mongoDB: "https://i.imgur.com/QYRfoqQ.png",
+	    D3: "https://i.imgur.com/rnBzCfm.png",
+	    Highcharts: "https://i.imgur.com/9R1IGev.png"
 	  };
 
 	  return allUrls[lib];
@@ -22933,13 +22933,13 @@
 
 	  // create a card for each site, new sites can be added at any time
 	  // all fields are mandatory!
-	  allCards.push(new Card('card1', 'Pinterest Clone', 'http://i.imgur.com/XSnb4j3.png', ['Meteor', 'React', 'Material UI'], 'There is no formal license attached. You are free to tinker with it and share the results with your friends, but please dont distribute binaries publicly without my permission. I still expect every user to pay for a license, unless you have a good reason not to.', 'site-url.com', 'SITE-GIT.COM'));
+	  allCards.push(new Card('card1', 'Pinterest Clone', 'https://i.imgur.com/XSnb4j3.png', ['Meteor', 'React', 'Material UI'], 'There is no formal license attached. You are free to tinker with it and share the results with your friends, but please dont distribute binaries publicly without my permission. I still expect every user to pay for a license, unless you have a good reason not to.', 'site-url.com', 'SITE-GIT.COM'));
 
-	  allCards.push(new Card('card2', 'Book Club', 'http://i.imgur.com/OwJhNO3.png', ['Meteor', 'React', 'Material UI', 'Bootstrap'], 'an other very cool looking site', 'site-url.com', 'SITE-GIT.COM'));
+	  allCards.push(new Card('card2', 'Book Club', 'https://i.imgur.com/OwJhNO3.png', ['Meteor', 'React', 'Material UI', 'Bootstrap'], 'an other very cool looking site', 'site-url.com', 'SITE-GIT.COM'));
 
-	  allCards.push(new Card('card3', 'Stock Market Graph', 'http://i.imgur.com/sjDdLml.png', ['Meteor', 'React', 'Material UI', 'Bootstrap', 'Highcharts'], 'an other very cool looking site', 'site-url.com', 'SITE-GIT.COM'));
+	  allCards.push(new Card('card3', 'Stock Market Graph', 'https://i.imgur.com/sjDdLml.png', ['Meteor', 'React', 'Material UI', 'Bootstrap', 'Highcharts'], 'an other very cool looking site', 'site-url.com', 'SITE-GIT.COM'));
 
-	  allCards.push(new Card('card4', 'Poll App', 'http://i.imgur.com/u70EtYy.png', ['Meteor', 'React', 'Material UI', 'Bootstrap', 'D3'], 'an other very cool looking site', 'site-url.com', 'SITE-GIT.COM'));
+	  allCards.push(new Card('card4', 'Poll App', 'https://i.imgur.com/u70EtYy.png', ['Meteor', 'React', 'Material UI', 'Bootstrap', 'D3'], 'an other very cool looking site', 'site-url.com', 'SITE-GIT.COM'));
 
 	  return allCards;
 	}
