@@ -20663,7 +20663,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'menu' },
-	          this.populateMenu()
+	          this.fillMenu()
 	        )
 	      );
 	    }

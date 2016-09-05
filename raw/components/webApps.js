@@ -6,7 +6,6 @@ export default class WebApps extends React.Component {
   constructor(props) {
     super(props);
     this.state = {active: this.props.d[0], filtered: this.props.d};
-    console.log('WEBAPPS LOADED!!..')
   }
 
   getCorrespondingObject = (title) => {
@@ -29,11 +28,13 @@ export default class WebApps extends React.Component {
     this.getCorrespondingObject(e)
   };
 
-  populateMenu = () => {
+  fillMenu = () => {
 
     // populates the menu with Card titles
     // it can be filtered based on the technology used
     // in creating the App corresponding to the Card
+
+    console.log('filling the menu...')
 
     return this.state.filtered.map((e) => {
       return (
@@ -98,7 +99,7 @@ export default class WebApps extends React.Component {
           {this.displayCard()}
         </div>
         <div className='menu'>
-          {this.populateMenu()}
+          {this.fillMenu()}
         </div>
       </div>
     )
