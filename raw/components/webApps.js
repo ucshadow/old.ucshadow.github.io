@@ -6,6 +6,7 @@ export default class WebApps extends React.Component {
   constructor(props) {
     super(props);
     this.state = {active: this.props.d[0], filtered: this.props.d};
+    console.log('WEBAPPS LOADED!!..')
   }
 
   getCorrespondingObject = (title) => {
