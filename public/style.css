@@ -1,0 +1,167 @@
+body {
+  background: #272c31;
+  font-family: "Panton-Regular", Arial, sans-serif;
+  margin: 0;
+}
+
+#container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.presentation {
+  flex-basis: 75%;
+  background: #272c31;
+  height: 100%;
+}
+
+.menu {
+  background-color: #34495e;
+  flex-basis: 25%;
+  height: 100%;
+}
+
+.test {
+  height: 10%;
+  width: 10%;
+  background: pink;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .presentation {
+    flex-basis: 100%;
+    height: 70%;
+  }
+
+  .menu {
+    flex-basis: 100%;
+    height: 30%;
+    align-self: flex-end;
+  }
+
+  .card-url, .card-git, .filter-button {
+    font-size: 0.6em;
+    border: none;
+  }
+}
+
+
+
+.card {
+  position: relative;
+  background: none;
+  width: 96%;
+  height: 90%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.card-picture {
+  position: relative;
+  width: 100%;
+  right: 0;
+}
+
+.card-libs {
+  width: 100%;
+  position:relative;
+  height: 6%;
+  text-align: center;
+}
+
+.single-lib {
+  float: left;
+  display:inline-block;
+  width: 8%;
+}
+
+.lib-pic {
+  background: none;
+  height: 80%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.lib-pic:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.card-description {
+  color: #ecf0f1;
+  margin-top: 4px;
+}
+
+.buttons-container {
+  margin-bottom: 1em;
+}
+
+.presentation-button {
+  background: none;
+  color: #ecf0f1;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.card-url, .card-git, .filter-button, .toggle-button {
+  float: right;
+  background: none;
+  color: #ecf0f1;
+  cursor: pointer;
+  border: 1px solid white;
+  margin-left: 2px;
+}
+
+.toggle-button-container {
+  position: absolute;
+  bottom: 10px;
+  margin-left: 10px;
+}
+
+.menu-item {
+  color: white;
+}
+
+.easy {
+  color: #17bf17;
+}
+
+.difficult {
+  color: #ff3d3d;
+}
+
+.challenge-container {
+  margin-top: 2em;
+  margin-left: 2em;
+  position: absolute;
+}
+
+.challenge-container a {
+  color: #87b7e8;
+  text-decoration: none;
+}
+
+.challenge-description {
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+
+.challenge-output {
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.challenge-input {
+  padding: 2px;
+  background: none;
+  color: white;
+}
+
+.alerts {
+  position: fixed;
+  bottom: 2em;
+}
