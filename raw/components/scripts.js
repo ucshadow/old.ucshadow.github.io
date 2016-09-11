@@ -29,27 +29,26 @@ export default class Scripts extends React.Component {
     return (
       <div id='container'>
         <div id='presentation' className='presentation' style={{color: 'white'}}>
-          SCRIPTS
-          {
+          <div className="navigation">
             <button className='presentation-button'
                     onClick={() => this.props.toggle('webApps')}
-            > WebApps </button>
-          }
-          {
+            > WebApps
+            </button>
             <button className='presentation-button'
                     onClick={() => this.props.toggle('scripts')}
-            > Scripts </button>
-          }
-          {
+            > Scripts
+            </button>
             <button className='presentation-button'
                     onClick={() => this.props.toggle('welcome')}
-            > Home </button>
-          }
-          .
+            > Home
+            </button>
+          </div>
           {this.state.active.c}
         </div>
-        <div className='menu'>
-          {this.populateMenu()}
+        <div className="menu-container">
+          <div className='menu'>
+            {this.populateMenu()}
+          </div>
         </div>
       </div>
     )

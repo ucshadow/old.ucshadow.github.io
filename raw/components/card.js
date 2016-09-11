@@ -3,10 +3,6 @@ import libUrl from '../scripts/libs';
 
 export default class Card extends React.Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   addLibs = () => {
 
     // adds picture for every technology used in building the App
@@ -14,7 +10,7 @@ export default class Card extends React.Component {
     return this.props.d.libs.map((l) => {
       return (
         <div key={Math.random()} className="single-lib" onClick={() => this.filterLib(l)}>
-          <img className="lib-pic" src={libUrl(l)}/>
+          <img className="lib-pic" src={libUrl(l)} title={l}/>
         </div>
       )
     })
@@ -26,8 +22,10 @@ export default class Card extends React.Component {
 
   render() {
     return (
-      <div className="card">
-        <img className="card-picture" src={this.props.d.picture}/>
+      <div className="card-container">
+        <div className="card">
+          <img className="card-picture" src={this.props.d.picture}/>
+        </div>
         <div className="card-libs">
           {this.addLibs()}
         </div>
@@ -39,8 +37,14 @@ export default class Card extends React.Component {
                 Clear Filter </button> :
                 null
             }
-            <button className="card-url"> Visit Site</button>
-            <button className="card-git"> Visit Git</button>
+            <a href={this.props.d.url} target="_blank">
+              <button className="card-url"> Visit Site</button>
+            </a>
+            {this.props.d.gitUrl ?
+              <a href={this.props.d.gitUrl} target="_blank">
+                <button className="card-git"> Visit Git</button>
+              </a>
+              : null}
           </div>
         </div>
       </div>

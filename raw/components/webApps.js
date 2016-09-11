@@ -38,7 +38,15 @@ export default class WebApps extends React.Component {
 
     return this.state.filtered.map((e) => {
       return (
-        <div key={Math.random()} className='menu-item' onClick={() => this.menuItemClick(e.title)}>
+        <div key={Math.random()}
+             className='menu-item'
+             onClick={() => this.menuItemClick(e.title)}
+             style={this.state.active.title === e.title ? {color: "white"} : null}>
+          <img className="menu-icon"
+               src={"/imgs/" + e.icon}
+               style={this.state.active.title === e.title ?
+               {WebkitFilter: "brightness(100%)", filter: "brightness(100%)"}
+               : null}/>
           {e.title}
         </div>
       )
@@ -51,8 +59,8 @@ export default class WebApps extends React.Component {
     // and updates state with Apps that use that technology only
 
     let fil = [];
-    this.props.d.forEach(function(e) {
-      if(e.libs.indexOf(tech) >= 0) {
+    this.props.d.forEach(function (e) {
+      if (e.libs.indexOf(tech) >= 0) {
         fil.push(e)
       }
     });
@@ -71,35 +79,34 @@ export default class WebApps extends React.Component {
     // and the clear filter function
 
     return <Card key={Math.random()} d={this.state.active} filterFunction={this.filterApps}
-    isFiltered={this.props.d.length - this.state.filtered.length} clear={this.clearFilter} />
+                 isFiltered={this.props.d.length - this.state.filtered.length} clear={this.clearFilter}/>
   };
 
   render() {
     return (
       <div id='container'>
         <div id='presentation' className='presentation' style={{color: 'white'}}>
-          WEBAPPS
-          {
+          <div className="navigation">
             <button className='presentation-button'
                     onClick={() => this.props.toggle('webApps')}
-            > WebApps </button>
-          }
-          {
+            > WebApps
+            </button>
             <button className='presentation-button'
                     onClick={() => this.props.toggle('scripts')}
-            > Scripts </button>
-          }
-          .
-          {
+            > Scripts
+            </button>
             <button className='presentation-button'
                     onClick={() => this.props.toggle('welcome')}
-            > Home </button>
-          }
+            > Home
+            </button>
+          </div>
 
           {this.displayCard()}
         </div>
-        <div className='menu'>
-          {this.fillMenu()}
+        <div className="menu-container">
+          <div className='menu'>
+            {this.fillMenu()}
+          </div>
         </div>
       </div>
     )

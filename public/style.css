@@ -1,6 +1,6 @@
 body {
   background: #272c31;
-  font-family: "Panton-Regular", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   margin: 0;
 }
 
@@ -9,18 +9,42 @@ body {
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+  height: 100%;
+  width: 100%;
 }
 
 .presentation {
   flex-basis: 75%;
   background: #272c31;
-  height: 100%;
 }
 
-.menu {
+.menu-container {
   background-color: #34495e;
   flex-basis: 25%;
   height: 100%;
+  overflow: hidden;
+}
+
+.menu {
+  overflow: auto;
+  height: 100%;
+  width: 110%;
+}
+
+.menu-item {
+  color: black;
+  border-bottom: 2px solid white;
+  height: 3em;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  width: 2em;
+  -webkit-filter: brightness(0%);
+  filter: brightness(0%);
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .test {
@@ -29,34 +53,14 @@ body {
   background: pink;
 }
 
-
-@media only screen and (max-width: 800px) {
-  .presentation {
-    flex-basis: 100%;
-    height: 70%;
-  }
-
-  .menu {
-    flex-basis: 100%;
-    height: 30%;
-    align-self: flex-end;
-  }
-
-  .card-url, .card-git, .filter-button {
-    font-size: 0.6em;
-    border: none;
-  }
-}
-
-
-
 .card {
   position: relative;
   background: none;
-  width: 96%;
-  height: 90%;
+  width: 80%;
   margin-left: 2%;
   margin-top: 2%;
+  float: left;
+  overflow: auto;
 }
 
 .card-picture {
@@ -66,24 +70,30 @@ body {
 }
 
 .card-libs {
-  width: 100%;
-  position:relative;
-  height: 6%;
+  position: relative;
+  float: left;
+  width: 10%;
   text-align: center;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  left: 3%;
 }
 
 .single-lib {
   float: left;
-  display:inline-block;
-  width: 8%;
+  display: inline-block;
 }
+
 
 .lib-pic {
   background: none;
   height: 80%;
+  max-height: 128px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   cursor: pointer;
+  margin-top: 2px;
 }
 
 .lib-pic:hover {
@@ -93,7 +103,10 @@ body {
 
 .card-description {
   color: #ecf0f1;
-  margin-top: 4px;
+  margin-top: 10px;
+  float: left;
+  width: 80%;
+  margin-left: 2%;
 }
 
 .buttons-container {
@@ -120,10 +133,6 @@ body {
   position: absolute;
   bottom: 10px;
   margin-left: 10px;
-}
-
-.menu-item {
-  color: white;
 }
 
 .easy {
@@ -164,4 +173,41 @@ body {
 .alerts {
   position: fixed;
   bottom: 2em;
+}
+
+@media only screen and (max-width: 800px) {
+  .presentation {
+    flex-basis: 100%;
+  }
+
+  .menu-container {
+    flex-basis: 100%;
+    align-self: flex-end;
+    margin-left: 2%;
+  }
+
+  .card-url, .card-git, .filter-button {
+    font-size: 0.6em;
+    border: none;
+  }
+
+  .card-libs {
+    width: 100%;
+    height: 15%;
+    display: block;
+  }
+
+  .single-lib {
+    margin-left: 2px;
+  }
+
+  .card {
+    position: relative;
+    background: none;
+    width: 100%;
+  }
+
+  .card-description {
+    width: 100%;
+  }
 }
