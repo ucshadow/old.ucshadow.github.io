@@ -13,16 +13,24 @@ module.exports = {
       loader: 'babel-loader'
     }]
   },
-  /*plugins:[
-    new webpack.DefinePlugin({
-      'process.env':{
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
+  plugins: [
+    // Minify assets.
     new webpack.optimize.UglifyJsPlugin({
-      compress:{
-        warnings: false
+      compress: {
+        warnings: false // https://github.com/webpack/webpack/issues/1496
       }
     })
-  ]*/
+  ]
+  /*plugins:[
+   new webpack.DefinePlugin({
+   'process.env':{
+   'NODE_ENV': JSON.stringify('production')
+   }
+   }),
+   new webpack.optimize.UglifyJsPlugin({
+   compress:{
+   warnings: false
+   }
+   })
+   ]*/
 };
