@@ -28,7 +28,7 @@ export default class Welcome extends React.Component {
               > Scripts </button>
             }
             .
-            <Landing />
+            <Landing d={this.props.d} />
         </div>
       </MuiThemeProvider>
     )

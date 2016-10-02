@@ -19,7 +19,7 @@ class App extends React.Component {
 
   render() {
     if (this.state.live === 'welcome') {
-      return <Welcome toggle={this.toggleLive} />
+      return <Welcome toggle={this.toggleLive} d={createCards()} />
     }
     else if (this.state.live === 'webApps') {
       return <WebApps toggle={this.toggleLive} d={createCards()}/>

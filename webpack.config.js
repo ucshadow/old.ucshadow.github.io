@@ -13,7 +13,7 @@ module.exports = {
       loader: 'babel-loader'
     }]
   },
-  plugins: [
+  /*plugins: [
     // Minify assets.
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -21,7 +21,7 @@ module.exports = {
       }
     })
   ]
-  /*plugins:[
+  plugins:[
    new webpack.DefinePlugin({
    'process.env':{
    'NODE_ENV': JSON.stringify('production')

@@ -1,5 +1,5 @@
 body {
-  background: #272c31;
+  /* background: #272c31; */
   font-family: "Roboto", Arial, sans-serif;
   margin: 0;
 }
@@ -173,6 +173,11 @@ body {
 .alerts {
   position: fixed;
   bottom: 2em;
+}
+
+.landingLib {
+  width: 50px;
+  margin-left: 5px;
 }
 
 @media only screen and (max-width: 800px) {

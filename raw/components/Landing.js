@@ -1,6 +1,6 @@
 import React from 'react';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+import SingleCard from './SingleCard';
+
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 // Needed for onTouchTap
@@ -36,37 +36,26 @@ export default class Landing extends React.Component {
       }
     }
     return {
-      width: (w - 100) / 3
+      width: (w - 300) / 3,
+      float: 'left',
+      marginLeft: 50,
+      marginTop: 50
     }
+  };
+
+  allProjects = () => {
+    let sorted = this.props.d.sort((a, b) => {
+      return a.pos - b.pos
+    });
+    return sorted.map((e) => {
+      return <SingleCard key={Math.random()} customStyle={this.handleScreenSize} d={e} />
+    })
   };
 
   render() {
     return (
       <div className="card-holder" id="card-container">
-        <Card
-          style={this.handleScreenSize()}
-        >
-          <CardHeader
-            title="URL Avatar"
-            subtitle="Subtitle"
-            avatar="https://s-media-cache-ak0.pinimg.com/236x/eb/5f/e2/eb5fe2264d37930466e6b40c13e80442.jpg"
-          />
-          <CardMedia
-            overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
-          >
-            <img src="http://www.girlsdaydaily.com/wp-content/uploads/2016/05/Minah-.png"/>
-          </CardMedia>
-          <CardTitle title="Card title" subtitle="Card subtitle"/>
-          <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-            Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-          </CardText>
-          <CardActions>
-            <FlatButton label="Action1"/>
-            <FlatButton label="Action2"/>
-          </CardActions>
-        </Card>
+        {this.allProjects()}
       </div>
     )
   }

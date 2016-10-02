@@ -16,7 +16,8 @@ export default function createCards() {
     "I could't get rid of a React warning. Now looking at it, a simple " + "<" + "img src={source} /> " +
     'would have been enough',
     'http://codepen.io/_catalin/pen/oxwQEq',
-    null
+    null,
+    27
   ));
 
   allCards.push(new Card(
@@ -32,7 +33,8 @@ export default function createCards() {
     "so since I have used it, I should put it in the tech bar. Also here is where I found out that you can't hotlink " +
     'imgur to codepen, so from there since I was stuck with imgbox.',
     'http://codepen.io/_catalin/pen/NNaYom',
-    null
+    null,
+    26
   ));
 
   allCards.push(new Card(
@@ -53,7 +55,8 @@ export default function createCards() {
     'The thing that I am most proud is the fact that you can add live cells as the game runs, no need to ' +
     'pause. This project also opened the door for SVG.',
     'http://codepen.io/_catalin/pen/oxqRxG',
-    null
+    null,
+    7
   ));
 
   allCards.push(new Card(
@@ -70,7 +73,8 @@ export default function createCards() {
     'pleasing to the eye, the design has slightly improved, also while working at it I have discovered ' +
     'the usage of float and all of a sudden the positioning of elements looked way easier than before.',
     'http://codepen.io/_catalin/pen/VaEZVK',
-    null
+    null,
+    8
   ));
 
   allCards.push(new Card(
@@ -84,7 +88,8 @@ export default function createCards() {
     'stackoverflow until I got it. This project is also the one that I really studied the bootstrap ' +
     'grid system. Here is where I also learned about .bind(this).',
     'http://codepen.io/_catalin/pen/WwaRKB',
-    null
+    null,
+    9
   ));
 
   allCards.push(new Card(
@@ -96,7 +101,8 @@ export default function createCards() {
     'Pretty self explanatory. This is just a markdown interpreter like the one github uses' +
     ". I just had to use a library to do the heavy lifting, but that's pretty much it. ",
     'http://codepen.io/_catalin/pen/BKqWrN',
-    null
+    null,
+    25
   ));
 
   allCards.push(new Card(
@@ -117,7 +123,8 @@ export default function createCards() {
     'Another thing to note is that I kept using React, even tho it was completely unnecessary, because ' +
     'why not consolidate your knowledge given the chance?',
     'http://codepen.io/_catalin/pen/yOQwPZ',
-    null
+    null,
+    24
   ));
 
   allCards.push(new Card(
@@ -133,7 +140,8 @@ export default function createCards() {
     'text displayed with a slight shadow sticks out more than without and also that pure black does not ' +
     'look the best on a white or white-ish background, so a slightly "lighter" black is better. ',
     'http://codepen.io/_catalin/pen/YqdmMj',
-    null
+    null,
+    10
   ));
 
   allCards.push(new Card(
@@ -147,7 +155,8 @@ export default function createCards() {
     'and everything was fitting in nicely. Not much to say except a praise towards D3 that handles big ' +
     'amounts of data with such ease. ',
     'http://codepen.io/_catalin/pen/PNVjEp',
-    null
+    null,
+    11
   ));
 
   allCards.push(new Card(
@@ -163,7 +172,8 @@ export default function createCards() {
     'uses a different api to achieve kinda the same result, I have decided not to change my original code ' +
     'and I just adjusted it al little bit to take the data from reddit.',
     'http://codepen.io/_catalin/pen/dMrPxJ',
-    null
+    null,
+    23
   ));
 
   allCards.push(new Card(
@@ -185,7 +195,8 @@ export default function createCards() {
     'browsers are not ready for this kind of renderings yet, at least not the old fashioned way using ' +
     'SVG or HTML, because with WebGL this would have been a lot smoother.',
     'http://codepen.io/_catalin/full/oxOZmY',
-    null
+    null,
+    5
   ));
 
   allCards.push(new Card(
@@ -204,7 +215,8 @@ export default function createCards() {
     'I wonder why... Anyways after I made this, I decided that this was to easy for me so I started ' +
     'Dynamic Web Application Projects, this is where the big boys where hanging and I wanted to be one of them! ',
     'https://github.com/ucshadow/fcc-timestamp-microservice',
-    'https://fcc-ts-msvc.herokuapp.com/January2017,12'
+    'https://fcc-ts-msvc.herokuapp.com/January2017,12',
+    22
   ));
 
   allCards.push(new Card(
@@ -231,7 +243,8 @@ export default function createCards() {
     'works. It took me 9 days to finish including the one day experiments with different frameworks. Overall I am ' +
     'pleased with the result given the fact that this was way harder to make then the next two challenges.',
     'https://ucshadow-vote-app.herokuapp.com/',
-    'https://github.com/ucshadow/Vote-App-FCC'
+    'https://github.com/ucshadow/Vote-App-FCC',
+    3
   ));
 
   allCards.push(new Card(
@@ -249,7 +262,8 @@ export default function createCards() {
     'noticeable, as React doeas a great job at rendering, but still. ' +
     'Overall an easier project.',
     'https://ucshadow-nightlife-coord-app.herokuapp.com/',
-    'https://github.com/ucshadow/FCC-NCA'
+    'https://github.com/ucshadow/FCC-NCA',
+    6
   ));
 
   allCards.push(new Card(
@@ -265,7 +279,8 @@ export default function createCards() {
     'The chart looks great, works great and it is easy to configure. Now you only need to know the stock name ' +
     'of the company you want to search. ',
     'https://fcc-stock-market.herokuapp.com/',
-    'https://github.com/ucshadow/FCC-stockMarket'
+    'https://github.com/ucshadow/FCC-stockMarket',
+    4
   ));
 
   allCards.push(new Card(
@@ -278,7 +293,8 @@ export default function createCards() {
     'It looked so simple that I decided to build it in Python using Flask. ' +
     'It was easy to make and easy to deploy to heroku. ',
     'https://ucshadow-header-parser.herokuapp.com/',
-    'https://github.com/ucshadow/FCC-header-parser/blob/master/app.py'
+    'https://github.com/ucshadow/FCC-header-parser/blob/master/app.py',
+    12
   ));
 
   allCards.push(new Card(
@@ -294,7 +310,8 @@ export default function createCards() {
     'no styling framework like bootstrap, it is all done "by hand". Here is where I started really looking into ' +
     'color palettes and design principles. ',
     'https://ucshadow-book-club.herokuapp.com/',
-    'https://github.com/ucshadow/FCC-books'
+    'https://github.com/ucshadow/FCC-books',
+    2
   ));
 
   allCards.push(new Card(
@@ -312,7 +329,8 @@ export default function createCards() {
     'those Components on new data. It was a great learning experience and an even greater introduction to Material ' +
     'design.',
     'https://ucshadow-book-club.herokuapp.com/',
-    'https://github.com/ucshadow/FCC-books'
+    'https://github.com/ucshadow/FCC-books',
+    1
   ));
 
   allCards.push(new Card(
@@ -327,7 +345,8 @@ export default function createCards() {
     'into design. One thing I have tried and and was successful at implementing was a check that the ' +
     'newly generated quote does not match the previously one, or the "NEW QUOTE" button would seem unresponsive. ',
     'http://codepen.io/_catalin/pen/oLBazV',
-    null
+    null,
+    13
   ));
 
   allCards.push(new Card(
@@ -340,7 +359,8 @@ export default function createCards() {
     "and if that fails it pings ipinfo.io for the user's IP. " +
     'It changes the background image based on he current weather condition.  ',
     'http://codepen.io/_catalin/pen/kXyrKK',
-    null
+    null,
+    14
   ));
 
   allCards.push(new Card(
@@ -352,7 +372,8 @@ export default function createCards() {
     'A simple Wikipedia article search page. ' +
     'Done using Material UI',
     'http://codepen.io/_catalin/pen/oLWzLk',
-    null
+    null,
+    15
   ));
 
   allCards.push(new Card(
@@ -363,7 +384,8 @@ export default function createCards() {
     ['React', 'jQuery', 'Material UI'],
     'A page that uses Twitch.tv JSON API. You can manually add streamers to check their live status ',
     'https://codepen.io/_catalin/pen/pbPVvG',
-    null
+    null,
+    16
   ));
 
   allCards.push(new Card(
@@ -375,7 +397,8 @@ export default function createCards() {
     'A simple Calculator. This is an older project of mine from a different codepen account. I just had it there ' +
     'and used this instead of writing a new one. ',
     'http://codepen.io/ucshadow/pen/VLXqOP',
-    null
+    null,
+    17
   ));
 
   allCards.push(new Card(
@@ -388,7 +411,8 @@ export default function createCards() {
     'and writing CSS in general but that was no excuse. Anyway, I wanted to leave this as I submitted it also as a ' +
     'reminder that unstyled pages do not look pretty.',
     'http://codepen.io/_catalin/pen/kXymBO',
-    null
+    null,
+    18
   ));
 
   allCards.push(new Card(
@@ -401,7 +425,8 @@ export default function createCards() {
     'efficient move. This project took a while as I had to study how the algorithm works, but I managed to pull ' +
     'it of in the end. It offers basic options but the challenge was not about the options.',
     'http://codepen.io/_catalin/pen/dXVARq',
-    null
+    null,
+    19
   ));
 
   allCards.push(new Card(
@@ -414,7 +439,8 @@ export default function createCards() {
     'The main problem was to make the sound as long as the mouse button was pressed. The Web Audio API looks great ' +
     'and is easy to work with once you get the basics.',
     'http://codepen.io/_catalin/pen/oLoyzx',
-    null
+    null,
+    20
   ));
 
   allCards.push(new Card(
@@ -435,14 +461,15 @@ export default function createCards() {
     'Anyways, with my own cave generator I had all the control I wanted and I just kept adding stuff. Great challenge. ' +
     'In the end is not the fastest game and definitely resource heavy, but it does what it has to. ',
     'http://codepen.io/_catalin/pen/oLoyzx',
-    null
+    null,
+    21
   ));
 
   return allCards;
 }
 
 
-var Card = function (id, title, picture, icon, libs, description, url, gitUrl) {
+var Card = function (id, title, picture, icon, libs, description, url, gitUrl, pos) {
   return {
     id: id,
     title: title,
@@ -451,6 +478,7 @@ var Card = function (id, title, picture, icon, libs, description, url, gitUrl) {
     libs: libs,
     description: description,
     url: url,
-    gitUrl: gitUrl
+    gitUrl: gitUrl,
+    pos: pos
   }
 };
