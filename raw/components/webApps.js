@@ -5,7 +5,7 @@ export default class WebApps extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {active: this.props.d[0], filtered: this.props.d};
+    this.state = {active: this.props.route.d[0], filtered: this.props.route.d};
   }
 
   getCorrespondingObject = (title) => {
@@ -13,15 +13,15 @@ export default class WebApps extends React.Component {
     // activates the card corresponding to the clicked
     // title in the menu
 
-    for (let i = 0; i < this.props.d.length; i++) {
-      if (this.props.d[i].title === title) {
-        this.setState({active: this.props.d[i]})
+    for (let i = 0; i < this.props.route.d.length; i++) {
+      if (this.props.route.d[i].title === title) {
+        this.setState({active: this.props.route.d[i]})
       }
     }
   };
 
   clearFilter = () => {
-    this.setState({filtered: this.props.d})
+    this.setState({filtered: this.props.route.d})
   };
 
   menuItemClick = (e) => {
@@ -59,7 +59,7 @@ export default class WebApps extends React.Component {
     // and updates state with Apps that use that technology only
 
     let fil = [];
-    this.props.d.forEach(function (e) {
+    this.props.route.d.forEach(function (e) {
       if (e.libs.indexOf(tech) >= 0) {
         fil.push(e)
       }
@@ -79,7 +79,7 @@ export default class WebApps extends React.Component {
     // and the clear filter function
 
     return <Card key={Math.random()} d={this.state.active} filterFunction={this.filterApps}
-                 isFiltered={this.props.d.length - this.state.filtered.length} clear={this.clearFilter}/>
+                 isFiltered={this.props.route.d.length - this.state.filtered.length} clear={this.clearFilter}/>
   };
 
   render() {

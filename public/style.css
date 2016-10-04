@@ -15,7 +15,6 @@ body {
 
 .presentation {
   flex-basis: 75%;
-  background: #272c31;
 }
 
 .menu-container {
@@ -84,7 +83,6 @@ body {
   float: left;
   display: inline-block;
 }
-
 
 .lib-pic {
   background: none;
@@ -176,8 +174,93 @@ body {
 }
 
 .landingLib {
-  width: 50px;
+  width: 42px;
   margin-left: 5px;
+  position: absolute;
+}
+
+.libs-appear {
+  opacity: 0.01;
+}
+
+.libs-appear.libs-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.nav-mobile {
+  background: green;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+}
+
+.nav-embed {
+  background: green;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+}
+
+.about-me {
+  background: #212121;
+  height: 60%;
+}
+
+.image {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-title {
+  text-align: center;
+  height: 2em;
+  color: #716f6f;
+}
+
+.card-overlay {
+  width: 100%;
+  height: 101%;
+  background: black;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.libs-container {
+  margin-left: 50px;
+}
+
+.landing-button-container {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+}
+
+.landing-git, .landing-url {
+  z-index: 100;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #f3f3f3;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.landing-url:hover {
+  color: #E91E63;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.landing-git:hover {
+  color: #0277BD;
+  -webkit-transition: color 1s;
+  transition: color 1s;
 }
 
 @media only screen and (max-width: 800px) {

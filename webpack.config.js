@@ -12,8 +12,8 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader'
     }]
-  },
-  /*plugins: [
+  },/*
+  plugins: [
     // Minify assets.
     new webpack.optimize.UglifyJsPlugin({
       compress: {
