@@ -14,9 +14,10 @@ export default class SingleCard extends React.Component {
   showOverlay = () => this.setState({overlay: 'on'});
   hideOverlay = () => this.setState({overlay: 'off'});
   showOverlayTouch = () => {
-    this.state.overlay === 'on' ?
-      this.setState({overlay: 'off'}) :
+    if (this.state.overlay !== 'on') {
       this.setState({overlay: 'on'});
+
+    }
   };
 
   setOverlay = () => {
@@ -33,10 +34,10 @@ export default class SingleCard extends React.Component {
             }
           </Motion>
           <div className="libs-container">
-            <AddLibs d={this.props.d.libs} />
+            <AddLibs d={this.props.d.libs}/>
           </div>
           <div className="landing-buttons-container">
-            <AddButtons d={this.props.d} />
+            <AddButtons d={this.props.d} active={this.state.overlay}/>
           </div>
         </div>
       )
