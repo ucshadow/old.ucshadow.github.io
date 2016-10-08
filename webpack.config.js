@@ -12,7 +12,7 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader'
     }]
-  },/*
+  },
   plugins: [
     // Minify assets.
     new webpack.optimize.UglifyJsPlugin({
@@ -20,7 +20,7 @@ module.exports = {
         warnings: false // https://github.com/webpack/webpack/issues/1496
       }
     })
-  ]
+  ]/*
   plugins:[
    new webpack.DefinePlugin({
    'process.env':{
