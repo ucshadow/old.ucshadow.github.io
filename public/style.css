@@ -189,15 +189,17 @@ body {
 }
 
 .nav-mobile {
-  background: green;
+  background: #f7f7f7;
   position: fixed;
   width: 100%;
   text-align: center;
   z-index: 100;
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 6px 6px rgba(0, 0, 0, 0.22);
 }
 
 .nav-embed {
-  background: green;
+  background: #212121;
+  color: white;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -268,6 +270,100 @@ body {
 
 }
 
+.nav-icons {
+  float: left;
+}
+
+.nav-icon {
+  margin-left: 1em;
+}
+
+.nav-links {
+  font-size: 1.2em;
+  float: right;
+  margin-right: 10%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(50%);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-button:hover, .nav-icon:hover {
+  color: #b2b2b2;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.about-single-tech {
+  text-align: center;
+}
+
+.about-single-tech > * {
+  display: block;
+}
+
+.about-single-tech {
+  width: 100px;
+}
+
+.about-tech-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about-img-container {
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  bottom: 2%;
+}
+
+.power-bar-container {
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  bottom: 20%;
+  left: 1em;
+}
+
+.power-bar {
+  background-color: green;
+  height: 5px;
+  background: -webkit-linear-gradient(left, red , green);
+  background: -o-linear-gradient(right, red, green);
+  background: -moz-linear-gradient(right, red, green);
+  background: linear-gradient(to right, red , green);
+}
+
+.single-tech {
+  width: 48px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+
+.single-tech:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
 @media only screen and (max-width: 800px) {
   .presentation {
     flex-basis: 100%;
@@ -302,5 +398,41 @@ body {
 
   .card-description {
     width: 100%;
+  }
+
+  .single-tech {
+    width: 32px;
+    height: 32px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .nav-links {
+    font-size: 1em;
+  }
+
+  .nav-icon {
+    margin-left: 3px;
+  }
+
+  .single-tech-name {
+    font-size: 0.6em;
+  }
+
+  .about-single-tech {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .single-tech {
+    width: 24px;
+    height: 24px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .about-single-tech {
+    width: 32px;
   }
 }

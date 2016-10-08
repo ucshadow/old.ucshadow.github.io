@@ -1,6 +1,6 @@
 export default function libUrl(lib) {
   // url's to framework icons
-  var allUrls = {
+  let allUrls = {
     Node: "https://i.imgur.com/kj7Vf48.png",
     Meteor: "https://i.imgur.com/omS8IRf.png",
     Bootstrap: "https://i.imgur.com/QoiOUgk.png",

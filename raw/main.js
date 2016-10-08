@@ -35,9 +35,15 @@ class App extends React.Component {
     return (
       <div>
         <nav className={this.state.navClass}>
-          <Link to="/" className="nav-button"> Home </Link>
-          <Link to="/web-apps" className="nav-button"> Web Apps </Link>
-          <Link to="/scripts" className="nav-button"> Scripts </Link>
+          <div className="nav-icons">
+            <i className="nav-icon fa fa-github fa-3x"> </i>
+            <i className="nav-icon fa fa-envelope-o fa-3x"> </i>
+          </div>
+          <div className="nav-links">
+            <Link to="/" className="nav-button"> Home </Link>
+            <Link to="/web-apps" className="nav-button"> Web Apps </Link>
+            <Link to="/scripts" className="nav-button"> Scripts </Link>
+          </div>
         </nav>
         {this.props.children}
       </div>
@@ -50,7 +56,7 @@ class App extends React.Component {
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={ App }>
-      <IndexRoute component={ Welcome } />
+      <IndexRoute component={ Welcome }/>
       <Route path="/web-apps" component={ WebApps } d={createCards()}/>
       <Route path="/scripts" component={ Scripts }/>
     </Route>
